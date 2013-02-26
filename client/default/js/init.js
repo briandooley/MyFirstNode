@@ -37,7 +37,7 @@ $fh.ready(function() {
   document.getElementById('green_button').onclick = function() {
   $fh.act(
       {
-        act:'myFunction'
+        act:'greenFunction'
       },
       function(res) {
         document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res) + "</p>";
@@ -51,7 +51,7 @@ $fh.ready(function() {
   document.getElementById('red_button').onclick = function() {
   $fh.act(
       {
-        act:'myFunction'
+        act:'redFunction'
       },
       function(res) {
         document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res) + "</p>";
