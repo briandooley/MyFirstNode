@@ -13,5 +13,6 @@ exports.greenFunction = function(params, callback) {
 };
 
 exports.redFunction = function(params, callback) {
-    return callback({err: 'Num too large'}, {result: num});
+    //return callback({err: 'Num too large'}, {result: num});
+  return callback({err: 'Num too large'}, {result: num});
 };
