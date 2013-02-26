@@ -9,7 +9,7 @@ exports.myFunction = function(params, callback) {
 exports.greenFunction = function(params, callback) {
   //var num = params.num;
   //callback(undefined, {result: num});
-  callback(undefined, {result: 'green button'});
+  return callback(undefined, {result: 'green button'});
 };
 
 exports.redFunction = function(params, callback) {
