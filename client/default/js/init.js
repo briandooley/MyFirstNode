@@ -33,4 +33,33 @@ $fh.ready(function() {
       }
     );
   };
+
+  document.getElementById('green_button').onclick = function() {
+  $fh.act(
+      {
+        act:'myFunction'
+      },
+      function(res) {
+        document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res) + "</p>";
+      },
+      function(err,msg) {
+        document.getElementById('cloudConfig').innerHTML = "<p>ERROR: " + JSON.stringify(msg.error) + "</p>";
+      }
+    );
+  };
+
+  document.getElementById('red_button').onclick = function() {
+  $fh.act(
+      {
+        act:'myFunction'
+      },
+      function(res) {
+        document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res) + "</p>";
+      },
+      function(err,msg) {
+        document.getElementById('cloudConfig').innerHTML = "<p>ERROR: " + JSON.stringify(msg.error) + "</p>";
+      }
+    );
+  };
+
 });
